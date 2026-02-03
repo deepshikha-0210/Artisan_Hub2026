@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/500.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+
+/* ArtisanHub Design System - Heritage + Minimal + Premium */
+
+@layer base {
+  :root {
+    /* Primary: Sage Green - Heritage & Nature */
+    --primary: 140 25% 35%;
+    --primary-foreground: 40 30% 96%;
+    
+    /* Background: Warm Cream */
+    --background: 40 30% 96%;
+    --foreground: 25 30% 15%;
+    
+    /* Card: Soft Beige */
+    --card: 40 25% 94%;
+    --card-foreground: 25 30% 15%;
+    
+    /* Popover */
+    --popover: 40 30% 96%;
+    --popover-foreground: 25 30% 15%;
+    
+    /* Secondary: Warm Beige */
+    --secondary: 35 35% 88%;
+    --secondary-foreground: 25 30% 20%;
+    
+    /* Muted */
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 15% 45%;
+    
+    /* Accent: Terra Cotta */
+    --accent: 18 55% 55%;
+    --accent-foreground: 40 30% 96%;
+    
+    /* Destructive */
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 40 30% 96%;
+    
+    /* Border & Input */
+    --border: 35 20% 82%;
+    --input: 35 20% 85%;
+    --ring: 140 25% 35%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom colors for ArtisanHub */
+    --sage: 140 25% 35%;
+    --sage-light: 140 20% 45%;
+    --sage-dark: 140 30% 25%;
+    --cream: 40 30% 96%;
+    --beige: 35 35% 88%;
+    --terra: 18 55% 55%;
+    --brown: 25 30% 25%;
+    --brown-light: 25 20% 40%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(40 30% 96%) 0%, hsl(35 35% 90%) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(140 25% 35%) 0%, hsl(140 30% 28%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 30% 15% / 0.08);
+    --shadow-card: 0 8px 30px -8px hsl(25 30% 15% / 0.1);
+    --shadow-elevated: 0 20px 50px -12px hsl(25 30% 15% / 0.15);
+    
+    /* Sidebar */
+    --sidebar-background: 40 25% 94%;
+    --sidebar-foreground: 25 30% 15%;
+    --sidebar-primary: 140 25% 35%;
+    --sidebar-primary-foreground: 40 30% 96%;
+    --sidebar-accent: 35 35% 88%;
+    --sidebar-accent-foreground: 25 30% 20%;
+    --sidebar-border: 35 20% 82%;
+    --sidebar-ring: 140 25% 35%;
+  }
+
+  .dark {
+    --primary: 140 20% 50%;
+    --primary-foreground: 25 30% 10%;
+    
+    --background: 25 30% 8%;
+    --foreground: 40 25% 92%;
+    
+    --card: 25 25% 12%;
+    --card-foreground: 40 25% 92%;
+    
+    --popover: 25 25% 10%;
+    --popover-foreground: 40 25% 92%;
+    
+    --secondary: 25 20% 18%;
+    --secondary-foreground: 40 25% 92%;
+    
+    --muted: 25 15% 20%;
+    --muted-foreground: 40 15% 60%;
+    
+    --accent: 18 45% 45%;
+    --accent-foreground: 40 30% 96%;
+    
+    --destructive: 0 55% 45%;
+    --destructive-foreground: 40 30% 96%;
+    
+    --border: 25 15% 22%;
+    --input: 25 15% 22%;
+    --ring: 140 20% 50%;
+    
+    --sage: 140 20% 50%;
+    --sage-light: 140 18% 60%;
+    --sage-dark: 140 25% 35%;
+    --cream: 40 20% 12%;
+    --beige: 35 15% 18%;
+    --terra: 18 45% 50%;
+    --brown: 40 25% 85%;
+    --brown-light: 40 15% 65%;
+    
+    --sidebar-background: 25 25% 10%;
+    --sidebar-foreground: 40 25% 92%;
+    --sidebar-primary: 140 20% 50%;
+    --sidebar-primary-foreground: 25 30% 10%;
+    --sidebar-accent: 25 20% 18%;
+    --sidebar-accent-foreground: 40 25% 92%;
+    --sidebar-border: 25 15% 22%;
+    --sidebar-ring: 140 20% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply text-foreground;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-sage-dark transition-all duration-300 shadow-soft hover:shadow-card;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300;
+  }
+  
+  .card-artisan {
+    @apply bg-card rounded-2xl shadow-card hover:shadow-elevated transition-all duration-500 overflow-hidden;
+  }
+  
+  .section-padding {
+    @apply py-20 md:py-28 px-4 md:px-8;
+  }
+  
+  .container-artisan {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .heading-display {
+    font-family: 'Playfair Display', serif;
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight;
+  }
+  
+  .heading-section {
+    font-family: 'Playfair Display', serif;
+    @apply text-3xl md:text-4xl font-semibold tracking-tight;
+  }
+  
+  .text-body {
+    @apply text-muted-foreground text-lg leading-relaxed;
+  }
+}
