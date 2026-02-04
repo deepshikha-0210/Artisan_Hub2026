@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - ArtisanHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ArtisanHub</a>
+                <nav class="nav">
+                    <a href="shop.html">Shop</a>
+                    <a href="collections.html">Collections</a>
+                    <a href="ar-tryon.html">AR Try-On</a>
+                    <a href="artisan.html">Artisans</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="icon-btn" id="searchBtn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <a href="cart.html" class="icon-btn" aria-label="Cart">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </a>
+                    <div class="auth-links">
+                        <a href="login.html">Login</a>
+                        <span>|</span>
+                        <a href="signup.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Collections Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Curated Collections</h1>
+            <p class="page-subtitle">Thoughtfully curated selections celebrating India's rich craft traditions</p>
+        </div>
+    </section>
+
+    <!-- Collections Grid -->
+    <section class="collections-section">
+        <div class="container">
+            <div class="collections-grid">
+                <!-- Collection Card 1 -->
+                <div class="collection-card-large">
+                    <div class="collection-image" style="background-image: url('public/indian-artisan-potter-workshop.jpg'); background-size: cover; background-position: center;">
+                        <div class="collection-overlay">
+                            <h2>Heritage Home</h2>
+                            <p>Traditional pieces for modern living spaces</p>
+                            <button class="btn btn-primary">Explore Collection</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection Card 2 -->
+                <div class="collection-card">
+                    <div class="collection-image" style="background-image: url('public/indian-brass-metal-art.jpg'); background-size: cover; background-position: center;">
+                        <div class="collection-overlay">
+                            <h3>Festive Treasures</h3>
+                            <p>Celebrate with handcrafted elegance</p>
+                            <button class="btn btn-secondary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection Card 3 -->
+                <div class="collection-card">
+                    <div class="collection-image" style="background-image: url('public/indian-wood-carving-artisan.jpg'); background-size: cover; background-position: center;">
+                        <div class="collection-overlay">
+                            <h3>Artisan's Pride</h3>
+                            <p>Showcasing master craftspeople</p>
+                            <button class="btn btn-secondary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection Card 4 -->
+                <div class="collection-card">
+                    <div class="collection-image" style="background-image: url('public/indian-woman-weaver-handloom.jpg'); background-size: cover; background-position: center;">
+                        <div class="collection-overlay">
+                            <h3>Eco Collection</h3>
+                            <p>Sustainable and earth-friendly</p>
+                            <button class="btn btn-secondary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection Card 5 -->
+                <div class="collection-card">
+                    <div class="collection-image" style="background-image: url('public/indian-textile-handloom-fabric.jpg'); background-size: cover; background-position: center;">
+                        <div class="collection-overlay">
+                            <h3>Textile Tales</h3>
+                            <p>Handwoven stories in fabric</p>
+                            <button class="btn btn-secondary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection Card 6 (Large) -->
+                <div class="collection-card-large">
+                    <div class="collection-image" style="background-image: url('public/indian-wood-carving-handicraft.jpg'); background-size: cover; background-position: center;">
+                        <div class="collection-overlay">
+                            <h2>Royal Heritage</h2>
+                            <p>Luxury crafts inspired by palace traditions</p>
+                            <button class="btn btn-primary">Explore Collection</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection Card 7 -->
+                <div class="collection-card">
+                    <div class="collection-image" style="background-image: url('public/indian-pottery-terracotta-clay.jpg'); background-size: cover; background-position: center;">
+                        <div class="collection-overlay">
+                            <h3>Metal Works</h3>
+                            <p>Forged with ancient techniques</p>
+                            <button class="btn btn-secondary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection Card 8 -->
+                <div class="collection-card">
+                    <div class="collection-image" style="background-image: url('public/smartphone-ar-view-room-interior-furniture.jpg'); background-size: cover; background-position: center;">
+                        <div class="collection-overlay">
+                            <h3>Gift Collection</h3>
+                            <p>Meaningful gifts, handcrafted</p>
+                            <button class="btn btn-secondary">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products from Collection -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured from Collections</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">Heritage Home</div>
+                    <div class="product-image" style="background-image: url('public/indian-brass-metal-art.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Vintage Brass Lamp</h3>
+                        <p class="product-artisan">By Ramesh Chand</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹3,499</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Festive Treasures</div>
+                    <div class="product-image" style="background-image: url('public/indian-pottery-terracotta-clay.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Diwali Thali Set</h3>
+                        <p class="product-artisan">By Meena Sharma</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹2,899</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Royal Heritage</div>
+                    <div class="product-image" style="background-image: url('public/indian-wood-carving-handicraft.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Marble Inlay Tray</h3>
+                        <p class="product-artisan">By Amir Khan</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹5,999</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Textile Tales</div>
+                    <div class="product-image" style="background-image: url('public/indian-textile-handloom-fabric.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Kashmiri Pashmina Shawl</h3>
+                        <p class="product-artisan">By Fatima Begum</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹8,499</span>
+                            <button class="btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ArtisanHub</h4>
+                    <p>Connecting you with India's finest artisans and their handcrafted treasures.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="shop.html">Shop</a>
+                    <a href="collections.html">Collections</a>
+                    <a href="ar-tryon.html">AR Try-On</a>
+                    <a href="artisan.html">Artisans</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="#shipping">Shipping</a>
+                    <a href="#returns">Returns</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="#instagram">Instagram</a>
+                    <a href="#facebook">Facebook</a>
+                    <a href="#twitter">Twitter</a>
+                    <a href="#pinterest">Pinterest</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ArtisanHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
